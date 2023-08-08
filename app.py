@@ -14,6 +14,9 @@ STARTING_MONEY = 100
 PROBABILITY_LOWER = 0.5
 PROBABILITY_UPPER = 0.9
 
+if __name__ == '__main__':
+    app.run()
+
 # configuration page
 @app.route("/", methods=["GET", "POST"])
 def index():
