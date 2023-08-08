@@ -5,15 +5,16 @@ from helpers import *
 import matplotlib.pyplot as plt
 from matplotlib.backends.backend_agg import FigureCanvasAgg as FigureCanvas
 
+app = Flask(__name__)
+app.config["SESSION_PERMANENT"] = False
+app.config["SESSION_TYPE"] = "filesystem"
+Session(app)
+
 STARTING_MONEY = 100
 PROBABILITY_LOWER = 0.5
 PROBABILITY_UPPER = 0.9
 
 if __name__ == '__main__':
-    app = Flask(__name__)
-    app.config["SESSION_PERMANENT"] = False
-    app.config["SESSION_TYPE"] = "filesystem"
-    Session(app)
     app.run()
 
 # configuration page
