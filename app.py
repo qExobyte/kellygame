@@ -2,6 +2,8 @@ import io
 from flask import Flask, render_template, request, session, redirect, Response
 from flask_session import Session
 from helpers import *
+import matplotlib
+matplotlib.use('Agg')
 import matplotlib.pyplot as plt
 from matplotlib.backends.backend_agg import FigureCanvasAgg as FigureCanvas
 
