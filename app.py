@@ -13,6 +13,7 @@ Session(app)
 STARTING_MONEY = 100
 PROBABILITY_LOWER = 0.5
 PROBABILITY_UPPER = 0.9
+TEST = 5
 
 # configuration page
 @app.route("/", methods=["GET", "POST"])
