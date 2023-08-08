@@ -1,0 +1,20 @@
+{% extends "layout.html" %}
+
+{% block body %}
+<br>
+<h2>Rounds:</h2>
+<form action="/" method="POST">
+    <input autofocus class="input-box round-box" placeholder="20" type="number" inputmode="numeric" name="input_round" min="1" max="999">
+    <button type="submit" class="button">Start</button>
+</form>
+
+<br>
+<h2>Instructions:</h2>
+<p class="description">
+    In this game, you're given an unfair coin, which lands heads anywhere from 50% to 90% of the time. You won't know the probability.
+    <br><br>You start with $100. Each coin flip, you can bet as much of your money as you'd like.
+    <br><br>If the coin lands <span class="heads">heads</span>, you earn double your bet. If the coin lands <span class="tails">tails</span>, you lose your bet.
+    <br><br>After all the rounds are completed, your final earnings will be compared to earnings of a Kelly Criterion betting strategy.
+    <br><br>The <a href="https://en.wikipedia.org/wiki/Kelly_criterion">Kelly Criterion</a> is a formula which optimizes the long-term growth rate of a bankroll.
+</p>
+{% endblock %}

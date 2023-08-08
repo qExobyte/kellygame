@@ -1,0 +1,56 @@
+.centered-flex-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* centers horizontally */
+    align-items: center; /* centers vertically */
+    height: 300px;
+    margin-bottom: 50px;
+}
+
+.description {
+    width: 500px;
+    text-align: center;
+    font-size: 18px;
+}
+
+.button {
+    margin: 10px;
+    width: 100px;
+    height: 40px;
+    font-size: 16px;
+    text-align: center;
+}
+
+.input-box {
+    height: 25px;
+    padding: 8px;
+    font-size: 28px;
+    text-align: center;
+    margin: 10px;
+}
+
+.round-box {
+    width: 50px;
+}
+
+.bet-box {
+    width: 75px;
+}
+
+h2 {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.heads {
+    color: green;
+}
+
+.tails {
+    color: crimson;
+}

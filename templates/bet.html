@@ -1,0 +1,17 @@
+{% extends "layout.html" %}
+
+{% block body %}
+<h2>
+    Money: ${{ session["money"] }}
+</h2>
+
+<form action="/bet" method="POST">
+    <input autocomplete="off" class="input-box bet-box" autofocus type="number" inputmode="numeric" name="input_bet">
+    <button type="submit" class="button">Bet</button>
+</form>
+
+<br>
+<h2 class="{% if message == 'Heads' %}heads{% elif message == 'Tails' %}tails{% endif %}">
+    {{ message }}
+</h2>
+{% endblock %}

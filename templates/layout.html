@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+
+<style>
+  /* Remove increment and decrement arrows */
+  input[type="number"]::-webkit-inner-spin-button,
+  input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+  input[type="number"] {
+    -moz-appearance: textfield;
+    appearance: textfield;
+  }
+</style>
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Kelly Game</title>
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+    </head>
+    <body class="centered-flex-container">
+        {% block body %} {% endblock %}
+    </body>
+</html>

@@ -1,0 +1,41 @@
+{% extends "layout.html" %}
+
+{% block body %}
+<br>
+
+<h2>
+    You ended with ${{ session["money"] }}
+</h2>
+<h2>
+    The optimal money is ${{ session["optimal_money"] }}
+</h2>
+
+<br><br>
+
+<!-- TODO colors for growth rates -->
+<h2>
+    Your growth rate was {{ growth_rate }}%
+</h2>
+<h2>
+    The optimal growth rate was {{ kelly_growth_rate }}%
+</h2>
+
+<br>
+<img src="/plot.png" alt="plot of betting data">
+<br><br>
+
+<h2>
+    More stats:
+</h2>
+<h3>
+    Probability: {{ session["probability"] }}
+</h3>
+<h3>
+    Rounds: {{ session["rounds"] }}
+</h3>
+
+<form action="/" method="GET">
+    <button type="submit" class="button">Replay</button>
+</form>
+
+{% endblock %}
